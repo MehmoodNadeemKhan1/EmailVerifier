@@ -72,7 +72,6 @@ func checkDomain(domain string) bool {
 			break
 		}
 	}
-
 	dmarcRecords, err := net.LookupTXT("_dmarc." + domain)
 
 	if err != nil {
